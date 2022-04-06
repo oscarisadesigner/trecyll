@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Review the posts"
+---
+
+<h1>{{ page.title }}</h1>
+
+{% assign scenario = site.data.scenario-2 %}
+
+{% assign postGroups = '' | split: '' %}
+
+{% for post in scenario['Posts'] %}
+
+	{% unless postGroups contains post.Category %}
+		{% assign postGroups = postGroups | push: post.Category %}
+	{% endunless %}
+	
+{% endfor %}
+
+<section>
+	{% for postGroup in postGroups %}
+	
+		<div>
+	
+			<h1>{{ postGroup }}</h1>
+		
+			{% for post in scenario['Posts'] %}
+			
+				{% if postGroup == post.Category %}
+					<a href="post.html" class="js-post-select" data-post-id="{{ post.Id }}">
+						<article class="js-post" data-post-id="{{ post.Id }}">
+							<h1>{{ post.Title }}</h1>
+							<p>Viewed: <span class="js-user-viewed">false</span></p>
+							<p>Rated: <span class="js-user-answer"></span></p>
+						</article>
+					</a>
+				{% endif %}
+			
+			{% endfor %}
+		
+		</div>
+	
+	{% endfor %}
+</section>
+
+<button class="js-scenario-reflect" disabled>Reflect on answers</button>
+
+<script>
+	const data = JSON.parse('{{ scenario | jsonify | replace : "'", "\\u0027" }}');
+</script>
+
+<script src="assets/js/scenario.js"></script>

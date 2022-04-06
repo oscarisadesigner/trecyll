@@ -1,0 +1,20 @@
+{
+"Id": 2,
+"Title": "Alex's Scenario",
+"Description": "",
+"Posts": [
+  {
+    "Id": 1,
+    "Title": "Post 1 test",
+    "Description": "",
+    "Category": "",
+    "ImageURL": "assets/img/scenario_2_post_1.jpg",
+    "ImageDescription": "",
+    "IsRisky": true,
+    "RiskReason": "",
+    "UserViewed": false,
+    "UserAnswer": -1,
+    "UserReason": ""
+  }
+]
+}

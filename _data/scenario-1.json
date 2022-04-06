@@ -1,0 +1,59 @@
+{
+  "Id": 1,
+  "Title": "Taylor's Scenario",
+  "Description": "",
+  "Posts": [
+    {
+      "Id": 1,
+      "Title": "Taylor's Shoes",
+      "Description": "A picture of Taylor's Shoes",
+      "Category": "Social Media Posts",
+      "ImageURL": "assets/img/scenario_1_post_1.jpg",
+      "ImageDescription": "A closeup photo of Taylor's shoes which are in black and made by VANS",
+      "IsRisky": false,
+      "RiskReason": "",
+      "UserViewed": false,
+      "UserAnswer": -1,
+      "UserReason": ""
+    },
+    {
+      "Id": 2,
+      "Title": "Taylor's Mother's Maiden Name",
+      "Description": "",
+      "Category": "Social Media Posts",
+      "ImageURL": "assets/img/scenario_1_post_2.jpg",
+      "ImageDescription": "A screenshot of an old photograph of Taylor's mother captioned with her mother's maiden name",
+      "IsRisky": true,
+      "RiskReason": "Her maiden name could be used to answer a security question to gain access to Taylor's online accounts.",
+      "UserViewed": false,
+      "UserAnswer": -1,
+      "UserReason": ""
+    },
+    {
+      "Id": 3,
+      "Title": "The Health Benefits of Veganism",
+      "Description": "",
+      "Category": "Blog Posts",
+      "ImageURL": "assets/img/scenario_1_post_3.jpg",
+      "ImageDescription": "A screenshot of a vegan-friendly blog post about the dietary and health benefits of veganism.",
+      "IsRisky": false,
+      "RiskReason": "",
+      "UserViewed": false,
+      "UserAnswer": -1,
+      "UserReason": ""
+    },
+    {
+      "Id": 4,
+      "Title": "Taylor's Monday Workout",
+      "Description": "",
+      "Category": "Social Media Posts",
+      "ImageURL": "assets/img/scenario_1_post_2.jpg",
+      "ImageDescription": "A screenshot of a social media post featuring the map and Taylor's workout route",
+      "IsRisky": true,
+      "RiskReason": "Her workout routine reveals her location of where she worked out and near her home.",
+      "UserViewed": false,
+      "UserAnswer": -1,
+      "UserReason": ""
+    }
+  ]
+}

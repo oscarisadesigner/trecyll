@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Pick a scenario"
+---
+
+<h1>Pick a scenario</h1>
+
+<div>
+	<button class="js-continue-scenario" style="display: none;" disabled>Continue from last session</button>
+</div>
+
+<ul>
+	<li>
+		<a class="js-scenario-select" href="scenario-1.html" data-scenario-id="1">
+			{{ site.data.scenario-1['Title'] }}
+		</a>
+	</li>
+	<li>
+		<a class="js-scenario-select" href="scenario-2.html" data-scenario-id="2">
+			{{ site.data.scenario-2['Title'] }}
+		</a>
+	</li>
+</ul>
+
+<script src="assets/js/index.js"></script>
